@@ -20,4 +20,11 @@ rpsEl.addEventListener('click', play)
 
 /*-------------------------------- Functions --------------------------------*/
 
+function getPlayerChoice(e) {
+  playerChoice = e.target.id
+}
 
+function play(e) {
+  getPlayerChoice(e)
+  console.log(playerChoice)
+}
