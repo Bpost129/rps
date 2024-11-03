@@ -16,12 +16,17 @@ const scissorEl = document.getElementById('scissors')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-rpsEl.addEventListener('click', play)
+// rpsEl.addEventListener('click', play)
+rockEl.addEventListener('click', play)
+paperEl.addEventListener('click', play)
+scissorEl.addEventListener('click', play)
 
 /*-------------------------------- Functions --------------------------------*/
 
 function getPlayerChoice(e) {
+  // e.stopPropagation()
   playerChoice = e.target.id
+  console.log(playerChoice)
 }
 
 function getCpuChoice() {
